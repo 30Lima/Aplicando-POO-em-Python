@@ -1,11 +1,14 @@
-class restaurante:
-    nome = ''
-    categoria = ''
-    ativo = False
+class Restaurante:
+    def __init__(self, nome, categoria):
+        self.nome = nome
+        self.categoria = categoria
+        self.ativo = False
 
-restaurante_praca = restaurante()
-restaurante_praca.nome = 'Praça'
-restaurante_praca.categoria = 'Gourmet'
+restaurante_praca = Restaurante('Praça', 'Gourmet')
+restaurante_pizza = Restaurante('Pizza Express', 'Italiana')
+
+print(vars(restaurante_praca))
+print(vars(restaurante_pizza))
 
 #print(restaurante_praca) -> exibição da alocação na memória
 #print(dir(restaurante_praca)) -> todas informações do objeto
