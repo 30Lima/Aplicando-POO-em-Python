@@ -1,13 +1,21 @@
 # Hora da prática: primeiro módulo
 
-class musica:
-    nome = ''
-    artista = ''
-    duracao = ''
+class Musica:
+    musicas = []
 
-vacations = musica()
-vacations.nome = 'Day dreamin'
-vacations.artista = 'Vacations'
-vacations.duracao = '1:55'
+    def __init__(self, nome, artista, duracao):
+        self.nome = nome
+        self.artista = artista
+        self.duracao = duracao
+        Musica.musicas.append(self)
 
-print(vars(vacations))
+    def __str__(self):
+        return f'{self.nome} | {self.artista} | {self.artista} | {self.duracao}'
+
+    def listar_musicas():
+        for musica in Musica.musicas:
+            print(f'{musica.nome} | {musica.artista} | {musica.duracao}')
+
+vacations = Musica('Day dreamin', 'Vacations', '1:55')
+
+Musica.listar_musicas()
