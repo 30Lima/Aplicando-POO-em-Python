@@ -14,7 +14,7 @@ class Restaurante():
  
     def mostrar_restaurantes():
         for restaurante in Restaurante.restaurantes:
-            print(f'{restaurante.nome} \n {restaurante.categoria} \n {restaurante.ativo} \n {restaurante.avaliacao} \n {restaurante.rodizio}')
+            print(f' Restaurante: {restaurante.nome} \n Categoria: {restaurante.categoria} \n Ativo: {restaurante.ativo} \n Avaliacao: {restaurante.avaliacao} \n Rodizio: {restaurante.rodizio}')
 
 Restaurante01 = Restaurante('Terraço Itália', 'Italiano', 'Sim', '⭐⭐⭐⭐⭐', 'Não')
 Restaurante.mostrar_restaurantes()
