@@ -7,7 +7,7 @@ class Restaurante():
     def __init__(self, nome, categoria, ativo, avaliacao, rodizio):
         self.nome = nome
         self.categoria = categoria
-        self.ativo = ativo
+        self.ativo = False
         self.avaliacao = avaliacao
         self.rodizio = rodizio
         Restaurante.restaurantes.append(self)
